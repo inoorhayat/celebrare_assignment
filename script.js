@@ -121,7 +121,7 @@ redoButton.addEventListener('click', () => {
 // Add Text Functionality
 addTextButton.addEventListener('click', () => {
   const textElement = document.createElement('div');
-  textElement.textContent = 'Double click to Write /n Single click to move';
+  textElement.textContent = 'Double click to Write, Single click to move';
   textElement.classList.add('text-element');
   textElement.contentEditable = false; // Start as non-editable
 
