@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebrare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://celebrare.in/assets/img/celebrare-logo.webp" alt="Logo" />
+      <!-- <span>Celebrare</span> -->
+    </div>
+    <div class="nav-buttons">
+      <button id="undo"><img src="./images/undo.svg" alt=""> Undo</button>
+      <button id="redo"><img src="./images/redo.svg" alt=""> Redo</button>
+    </div>
+  </header>
+  <main class="editor">
+    <div id="canvasContainer">
+      <div id="canvas"></div>
+    </div>
+  </main>
+  <footer class="toolbar">
+    <select id="fontSelector">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+    <input type="number" id="fontSize" placeholder="Font Size" min="10" max="100">
+    <button id="boldText"><b>B</b></button>
+    <button id="italicText"><i>I</i></button>
+    <button id="underlineText"><u>U</u></button>
+    <button id="alignLeft">Left</button>
+    <button id="alignCenter">Center</button>
+    <button id="alignRight">Right</button>
+  </footer>
+  <div class="addText">
+    <button id="addText"><span>T</span>   Add Text</button>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
